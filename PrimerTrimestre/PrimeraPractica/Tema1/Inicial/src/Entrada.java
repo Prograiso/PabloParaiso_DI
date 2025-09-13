@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Entrada {
     //variables
-    final String DNI = "12345678A";
-    String nombre = "Juan";
+    final String DNI = "12345678A"; //constante por "final"
+    String nombre = "Juan"; // cl
     char letra = 'A';
 
     int numero = 34; //tipo primitivo
@@ -23,14 +23,14 @@ public class Entrada {
 
     public static void main(String[] args) {
 
-        Scanner lecturaTeclado = new Scanner(System.in);
-        System.out.println("Por favor, introduce tu nombre: ");
-        String nombre = lecturaTeclado.next();
+        Scanner lecturaTeclado = new Scanner(System.in); //para leer por teclado
+        System.out.println("Por favor, introduce tu nombre: ");//mensaje por pantalla con salto de linea
+        String nombre = lecturaTeclado.next(); //lee una cadena de texto hasta el primer espacio
         System.out.println("Por favor, introduce tu edad: ");
-        int edad = lecturaTeclado.nextInt();
+        int edad = lecturaTeclado.nextInt(); //lee un entero por teclado
         System.out.println("Primer Programa de Java");
         System.out.println("mi nombre es "+nombre);
-        System.out.printf("Mi nombre es %s y %n tengo %d",nombre,edad);
+        System.out.printf("Mi nombre es %s %ny tengo %d",nombre,edad); //formateo de cadenas
 
     }
 
