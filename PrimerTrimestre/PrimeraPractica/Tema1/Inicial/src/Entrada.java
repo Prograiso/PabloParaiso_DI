@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Entrada {
+    /*
     //variables
     final String DNI = "12345678A"; //constante por "final"
     String nombre = "Juan"; // cl
@@ -11,7 +12,7 @@ public class Entrada {
     Integer numero2 = 45; //clase envolvente compleja
 
     double altura = 12.25;
-    float peso = 12.25f;
+    float peso = 12.25f;*/
 
 
     //constructores
@@ -23,7 +24,7 @@ public class Entrada {
 
     public static void main(String[] args) {
 
-        Scanner lecturaTeclado = new Scanner(System.in); //para leer por teclado
+        /*Scanner lecturaTeclado = new Scanner(System.in); //para leer por teclado
         System.out.println("Por favor, introduce tu nombre: ");//mensaje por pantalla con salto de linea
         String nombre = lecturaTeclado.next(); //lee una cadena de texto hasta el primer espacio
         System.out.println("Por favor, introduce tu edad: ");
@@ -32,6 +33,31 @@ public class Entrada {
         System.out.println("mi nombre es "+nombre);
         System.out.printf("Mi nombre es %s %ny tengo %d",nombre,edad); //formateo de cadenas
 
+
+        SentenciasControl sentencias = new SentenciasControl();
+        sentencias.sentenciasRepeticionSwitch(); */
+
+        EstructurasArrays estructurasArrays = new EstructurasArrays();
+
+       /* estructurasArrays.buscarNumero(5);
+        estructurasArrays.estaNumero(90); //añadir aquí los mensajes de salida*/
+
+        estructurasArrays.llenarArray();
+        estructurasArrays.mostrarDatosArray();
+
+        estructurasArrays.sumaMaxMinMedio();
+
+        System.out.println("Giro a la derecha");
+        estructurasArrays.girarArrayDerecha();
+        estructurasArrays.mostrarDatosArray();
+
+        estructurasArrays.llenarArray();
+        System.out.println("Array nuevo");
+        estructurasArrays.mostrarDatosArray();
+
+        System.out.println("Giro a la izquierda");
+        estructurasArrays.girarArrayIzquierda();
+        estructurasArrays.mostrarDatosArray();
     }
 
 }
