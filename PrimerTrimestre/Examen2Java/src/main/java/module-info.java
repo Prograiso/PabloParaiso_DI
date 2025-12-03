@@ -12,10 +12,15 @@ module org.example.examen2java {
     requires lombok;
 
     opens org.example.examen2java to javafx.fxml, lombok;
+    exports org.example.examen2java;
 
     opens org.example.examen2java.controller to javafx.fxml;
+    exports org.example.examen2java.controller to javafx.fxml;
 
     opens org.example.examen2java.model to javafx.fxml;
+    exports org.example.examen2java.model to javafx.fxml;
 
-    exports org.example.examen2java;
+
+
+
 }

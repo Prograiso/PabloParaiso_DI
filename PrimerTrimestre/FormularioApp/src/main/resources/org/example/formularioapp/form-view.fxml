@@ -39,6 +39,19 @@
          </children>
       </GridPane>
    </right>
+    <left>
+        <GridPane fx:id="panelJSON" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ListView fx:id="listViewJSON" prefHeight="200.0" prefWidth="200.0" />
+            </children>
+        </GridPane>
+    </left>
    <padding>
       <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
    </padding>

@@ -11,15 +11,19 @@ module org.example.formularioapp {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.desktop;
+    //añadimos librerias jackson par los json
+    requires com.fasterxml.jackson.databind;
+    requires com.fasterxml.jackson.annotation;
 
-    requires lombok; //añadida para crear clases esta libreria y añadida a dependencyes
+    requires lombok;
+     //añadida para crear clases esta libreria y añadida a dependencyes
 
 
     opens org.example.formularioapp to javafx.fxml;
     exports org.example.formularioapp;
 
     exports org.example.formularioapp.model;
-    opens org.example.formularioapp.model to javafx.fxml, lombok;//hay que añadirlo aquí tambien sino no va
+    opens org.example.formularioapp.model to javafx.fxml, lombok, com.fasterxml.jackson.annotation;//hay que añadirlo aquí tambien sino no va
 
     exports org.example.formularioapp.controller;
     opens org.example.formularioapp.controller to javafx.fxml;

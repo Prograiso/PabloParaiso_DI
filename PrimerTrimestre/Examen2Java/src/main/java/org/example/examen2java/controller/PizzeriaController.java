@@ -18,7 +18,6 @@ import javafx.scene.layout.GridPane;
 import org.example.examen2java.model.Pedido;
 import org.example.examen2java.model.Pizza;
 
-import static javafx.beans.binding.Bindings.when;
 
 public class PizzeriaController implements Initializable {
 
@@ -119,8 +118,8 @@ public class PizzeriaController implements Initializable {
 
                 }
                 else{
-                    Pizza pizza = new Pizza(comboPizza.getSelectionModel().getSelectedItem(),radioGroup.getSelectedToggle().toString(),)
-                    Pedido pedido = new Pedido(idPedido,tfNombre.getText(),tfTelefono.getText(),)
+                   // Pizza pizza = new Pizza(comboPizza.getSelectionModel().getSelectedItem(),radioGroup.getSelectedToggle().toString(),)
+                   // Pedido pedido = new Pedido(idPedido,tfNombre.getText(),tfTelefono.getText(),)
                 }
             }
         }
